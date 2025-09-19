@@ -1,0 +1,64 @@
+
+body {
+    display: flex;  
+    height: 100vh;           
+    background-color: #ffe066; 
+     justify-content: center;  
+    align-items: center; 
+    overflow: hidden;
+}
+
+h2
+{
+
+    justify-content: center;  
+    align-items: center;   
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    color: #dda15e;      
+    text-shadow: 2px 2px black; 
+    transform: rotate(-3deg); 
+    animation: pushFront 2s infinite;
+  font-size: 48px;
+  
+}
+
+/*@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(0deg); }
+}*/
+
+@keyframes pushFront {
+    0%, 100% {
+        transform: scale(1); /* normal size */
+    }
+    50% {
+        transform: scale(1.5); /* grow bigger, looks like coming forward */
+    }
+}
+
+.circle-btn {
+    width: 80px;               
+    height: 80px;             
+    border-radius: 50%;        
+    border: none;              
+    background-color: #ff5733; 
+    color: white;             
+    font-size: 24px;         
+    cursor: pointer;         
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3); 
+    transition: transform 0.2s, background-color 0.2s; 
+    position: fixed;         
+    bottom: 90px;             
+    right: 70px;             
+}
+
+.circle-btn:hover {
+    background-color: black;
+    transform: scale(1.1);     
+}
+
+
+
